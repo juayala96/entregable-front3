@@ -6,13 +6,13 @@ export default function Item({name, description, stock,addItem}) {
   function comprar(){
     addItem();
     setCantStock((cant)=> cant - 1);
-    console.log("Se resta un item de la cantidad en stock.");
+    console.log("Se resta un item");
   }
   return (
     <div className='producto'>
       <h3>{name}</h3>
       <p>{description}</p>
-      <h5>En Stock: {cantStock > 0 ? cantStock : <span>Agotado</span>} </h5>
+      <h5>En stock: {cantStock > 0 ? cantStock : <span>Agotado</span>} </h5>
       <button disabled={cantStock <=0} onClick={comprar}>{cantStock > 0 ? 'Comprar' : 'Sin Stock'}</button>
     </div>
   )

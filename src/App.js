@@ -6,7 +6,7 @@ function App() {
   const [cantidad, setCantidad] = useState(0);
   function addItem(){
     setCantidad((cant)=> cant + 1);
-    console.log("Se ha agregado un item al carrito.");
+    console.log("Item agregado al carrito");
   }
   return (
     <div className="App">
