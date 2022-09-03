@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![demoReactFE3.gif](https://raw.githubusercontent.com/juayala96/entregable-front3/blob/main/demoReactFE3.gif)
+[demoReactFE3.gif](https://raw.githubusercontent.com/Frontend-III/entregable-frontend-3-junio22/main/demoReactFE3.gif)
 
 ## Available Scripts
 
