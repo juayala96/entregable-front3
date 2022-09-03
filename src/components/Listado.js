@@ -2,7 +2,6 @@ import productos from './data.json';
 import Item from './Item';
 
 export default function Listado({addItem}) {
-
   return (
     <div className='container'>
         {productos.map((item) => (

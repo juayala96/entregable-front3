@@ -1,7 +1,6 @@
 import React from 'react'
 
 export default function Cabecera({cantidad}) {
-  
   return (
     <header>
         <h1>Carrito de compras</h1>

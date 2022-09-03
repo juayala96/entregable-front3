@@ -13,8 +13,7 @@ body {
 }
 
 header {
-  /* background-color: rgb(221, 221, 221); */
-  background-color: rgba(1, 129, 99, 0.519);
+  background-color: #ddd;
   padding: 20px 40px;
 }
 header h1{
