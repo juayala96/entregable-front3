@@ -7,7 +7,7 @@ export default function Listado({addItem}) {
         {productos.map((item) => (
           <Item 
             key={item.id}
-            name={item.producto.name}
+            name={item.producto.nombre}
             description={item.producto.descripcion}
             stock={item.stock}
             addItem={addItem}
