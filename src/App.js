@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Cabecera from './components/Cabecera';
+import Listado from './components/Listado';
+import {useState} from 'react';
 
 function App() {
+  const [cantidad, setCantidad] = useState(0);
+
+  function addItem(){
+    setCantidad((cant)=> cant + 1);
+    console.log("Se ha agregado un item al carrito.");
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Cabecera cantidad={cantidad}/>
+      <Listado addItem={addItem}/>
     </div>
   );
 }
